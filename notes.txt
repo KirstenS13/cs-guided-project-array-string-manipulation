@@ -1,0 +1,31 @@
+Static Vs Dynamic Arrays
+
+The properties of static vs dynamic arrays influences which data structure you choose
+
+Static Array - preset size
+
+Dynamic Array - grows as needed; double the capacity each time more space is needed
+
+Capacity vs Size:
+    Capacity = how many elements the array could hold
+    Size = how many elements the array is holding
+
+Most languages default to dynamic arrays
+    -- Generally only lower level languages like C or Java deal with static arrays
+
+Runtimes:
+    Lookup: S = O(1), D = O(1)
+    Append: S = O(1), D = O(1)
+    Insert: S = O(n), D = O(n)
+    Delete: S = O(n), D = O(n)
+
+Space: S = O(n), D = O(n)
+
+In-Place vs Out-of-Place Algorithms:
+    In-Place = modifies the input directly
+    Out-of-Place = modifies a copy of the input
+
+    In-Place:
+        Cons: It destroys the original input
+
+        Only use In-Place if you are ablsolutely certain you won't need the original input and are incredibly squeezed for space
